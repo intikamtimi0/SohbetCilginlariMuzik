@@ -19,7 +19,7 @@ async def durdur(_, message: Message):
     ) or (
             callsmusic.pytgcalls.active_calls[message.chat.id] == 'Stopped'
     ):
-        await message.reply_text(f"**{BN} :-** 🙄 The music is not running!")
+        await message.reply_text(f"**{BN} :-** 🙄 Nothing is playing!")
     else:
         callsmusic.pytgcalls.pause_stream(message.chat.id)
         await message.reply_text(f"**{BN} :-** 🤐 Stopped!")
@@ -32,12 +32,12 @@ async def devam(_, message: Message):
     if (
             message.chat.id not in callsmusic.pytgcalls.active_calls
     ) or (
-            callsmusic.pytgcalls.active_calls[message.chat.id] == 'Continues'
+            callsmusic.pytgcalls.active_calls[message.chat.id] == 'Resumed'
     ):
-        await message.reply_text(f"**{BN} :-** 🙄 Nothing Stopped!")
+        await message.reply_text(f"**{BN} :-** 🙄 Nothing is paused!")
     else:
         callsmusic.pytgcalls.resume_stream(message.chat.id)
-        await message.reply_text(f"**{BN} :-** 🥳 Continues!")
+        await message.reply_text(f"**{BN} :-** 🥳 Resumed!")
 
 
 @Client.on_message(command("end") & other_filters)
@@ -45,7 +45,7 @@ async def devam(_, message: Message):
 @authorized_users_only
 async def bitir(_, message: Message):
     if message.chat.id not in callsmusic.pytgcalls.active_calls:
-        await message.reply_text(f"**{BN} :-** 🙄 Nothing Plays!")
+        await message.reply_text(f"**{BN} :-** 🙄 Nothing is streaming!")
     else:
         try:
             callsmusic.queues.clear(message.chat.id)
@@ -53,7 +53,7 @@ async def bitir(_, message: Message):
             pass
 
         callsmusic.pytgcalls.leave_group_call(message.chat.id)
-        await message.reply_text(f"**{BN} :-** ❌ Finished!")
+        await message.reply_text(f"**{BN} :-** ❌ Finished streaming!")
 
 
 @Client.on_message(command("skip") & other_filters)
@@ -61,7 +61,7 @@ async def bitir(_, message: Message):
 @authorized_users_only
 async def atla(_, message: Message):
     if message.chat.id not in callsmusic.pytgcalls.active_calls:
-        await message.reply_text(f"**{BN} :-** 🙄 Nothing plays to skip!")
+        await message.reply_text(f"**{BN} :-** 🙄 Nothing is playing to skip!")
     else:
         callsmusic.queues.task_done(message.chat.id)
 
@@ -73,4 +73,4 @@ async def atla(_, message: Message):
                 callsmusic.queues.get(message.chat.id)["file_path"]
             )
 
-        await message.reply_text(f"**{BN} :-** 😬 Skipped to the Next Music!")
+        await message.reply_text(f"**{BN} :-** 😬 Skipped the current song!")
