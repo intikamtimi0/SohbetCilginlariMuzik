@@ -1,8 +1,8 @@
 {
   "name": "MusicBot",
-  "description": "Telegram'ınızın Grup Sesli Sohbeti'nde şarkı çalmak için Açık Kaynaklı bot. PyTgCalls tarafından desteklenmektedir.",
+  "description": "Telegram's Group Voice Chat. Powered by PyTgCalls.",
   "keywords": ["music", "voicechat", "telegram"],
-  "repository": "https://github.com/cancinconntg/vc_bot",
+  "repository": "https://github.com/cancinconnnbot/SerenityHelpMusic",
   "stack": "container",
   "env": {
     "SESSION_NAME": {
