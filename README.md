@@ -6,7 +6,7 @@ More Serenity Bots = [@SerenityBots](https://t.me/SerenityBots)
 
 <h3 align="centre"> Heroku </h4>
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/cancinconnnbot/SerenityHelpMusic)
 
 STRING_NAME ;
 
