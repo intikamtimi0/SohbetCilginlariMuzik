@@ -1,21 +1,21 @@
-<h1 align="centre">🎶 Müzik Bot 🎶</h1>
+<h1 align="centre">🎶 Serenity Music Bot 🎶</h1>
 
-Ana Grup = [@Saygisizlar](https://t.me/Saygisizlar)
+Support Group = [@SerenitySupport](https://t.me/SerenitySupport)
 
-Hazırlayan = [@SaygisizlarSahip](https://t.me/SaygisizlarSahip)
+More Serenity Bots = [@SerenityBots](https://t.me/SerenityBots)
 
 <h3 align="centre"> Heroku </h4>
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-STRING_NAME i buradan alın ;
+STRING_NAME ;
 
 [![GenerateString](https://img.shields.io/badge/repl.it-generateString-yellowgreen)](https://repl.it/@subinps/getStringName)
 
 ### Zorunlu Gerekenler. 
 ----------------------------------
-   - `API_ID` :  Fake hesabınızın Api ID sini giriniz. 
-   - `API_HASH` :  Fake hesabınızın Api HASH ını giriniz.
-   - `STRING_NAME` :  Buradan session oluşturun. [here](https://repl.it/@subinps/getStringName)
-   - `BOT_TOKEN` :  Buradan bot oluşturun [@Botfather](https://t.me/botfather) ve tokeni girin. 
-   - `SUDO_USERS` :  Buraya grupta yönetici olmasa bile botu yönetmesini istediğiniz kişinin id sini girin. Birden fazla yazacaksanız arasına boşluk koyun. 
+   - `API_ID` [auth](https://my.telegram.org/auth)
+   - `API_HASH` [auth](https://my.telegram.org/auth)
+   - `STRING_NAME` [here](https://repl.it/@subinps/getStringName)
+   - `BOT_TOKEN`  [@Botfather](https://t.me/botfather) ve tokeni girin. 
+   - `SUDO_USERS` User ID's
