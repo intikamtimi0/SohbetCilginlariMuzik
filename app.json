@@ -6,17 +6,17 @@
   "stack": "container",
   "env": {
     "SESSION_NAME": {
-      "description": "Pyrogram oturum dizesi",
+      "description": "Pyrogram session string",
       "required": true
     },
     "BOT_TOKEN": {
-      "description": "Bot Token @BotFather",
+      "description": "A bot token from @BotFather",
       "required": true
     },
     "BOT_NAME": {
-      "description": "MusicPlayer Bot Adınız.",
+      "description": "Your MusicPlayer Bot Name.",
       "required": false,
-      "value": "Saygısızlar Müzik Bot"
+      "value": "Serenity Music Bot"
     },
     "API_ID": {
       "description": "App ID my.telegram.org/apps",
@@ -27,13 +27,13 @@
       "required": true
     },
     "SUDO_USERS": {
-      "description": "Yönetici ID listesi.",
+      "description": "List of user IDs counted as admin everywhere (separated by space).",
       "required": true
     },
     "DURATION_LIMIT": {
-      "description": "İndirmeler için maksimum ses süresi sınırı (dakika).",
+      "description": "Max audio duration limit for downloads (minutes).",
       "required": true,
-      "value": "10"
+      "value": "40"
     }
   }
 }
