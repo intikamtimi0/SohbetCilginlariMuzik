@@ -9,7 +9,13 @@ from config import BOT_NAME as bn
 @Client.on_message(filters.command("start") & filters.private & ~filters.channel)
 async def start(_, message: Message):
     await message.reply_text(
-        f"""Merhaba👋 Telegeam Gruplarının sesli sohbetlerinde müzik çalabiliyorum. Seni şaşırtacak bir sürü harika özelliğim var!\n\n🔴 Telegram gruplarının sesli sohbetlerinde müzik çalmamı ister misin? \nBeni nasıl kullanabileceğinizi öğrenmek için lütfen aşağıdaki \ '📜 Kullanım Kılavuzu 📜 \' düğmesini tıklayın. \ N \ n🔴 Grubunuzun sesli sohbetinde müzik çalabilmek için Asistanın grubunuzda olması gerekir. \ N \ n🔴 Diğer [Kullanıcı Kılavuzunda](https://telegra.ph/Serenity-Music-Bot-05-05) belirtilen bilgi ve komutlar\n\n@ExercitusBots'un bir projesi""",
+        f"""Merhaba👋 Telegeam Gruplarının sesli sohbetlerinde müzik çalabiliyorum.
+        Seni şaşırtacak bir sürü harika özelliğim var!
+        Telegram gruplarının sesli sohbetlerinde müzik çalmamı ister misin?
+        Beni nasıl kullanabileceğinizi öğrenmek için lütfen aşağıdaki \ '📜 Kullanım Kılavuzu 📜 \' düğmesini tıklayın.
+        Grubunuzun sesli sohbetinde müzik çalabilmek için Asistanın grubunuzda olması gerekir.
+        Diğer Kullanıcı Kılavuzunda belirtilen bilgi ve komutlar
+        @ExercitusBots'un bir projesi""",
         reply_markup=InlineKeyboardMarkup(
             [ 
                 [
