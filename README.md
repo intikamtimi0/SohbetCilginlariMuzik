@@ -1,12 +1,12 @@
 <h1 align="centre">🎶 Serenity Music Bot 🎶</h1>
 
-Support Group = [@SerenitySupport](https://t.me/SerenitySupport)
+Support Group = [@ExercitusSupport](https://t.me/ExercitusSupport)
 
-More Serenity Bots = [@SerenityBots](https://t.me/SerenityBots)
+More Serenity Bots = [@ExercitusBots](https://t.me/ExercitusBots)
 
 <h3 align="centre"> Heroku </h4>
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/cancinconnnbot/SerenityHelpMusic)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/cancinconnnbot/ExercitusNewMusic)
 
 STRING_NAME ;
 
