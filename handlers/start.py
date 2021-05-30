@@ -9,19 +9,19 @@ from config import BOT_NAME as bn
 @Client.on_message(filters.command("start") & filters.private & ~filters.channel)
 async def start(_, message: Message):
     await message.reply_text(
-        f"""Hello 👋 there! I can play music in voice chats of Telegeam Groups. I have a lot of cool feature that will amaze you!\n\n🔴 Do you want me to play music in your Telegram groups'voice chats? Please click the \'📜 User Manual 📜\' button below to know how you can use me.\n\n🔴 The Assistant must be in your group to play music in the voice chat of your group.\n\n🔴 More info & commands mentioned in the [User Manual](https://telegra.ph/Serenity-Music-Bot-05-05)\n\nA project by @SerenityBots""",
+        f"""Merhaba👋 Telegeam Gruplarının sesli sohbetlerinde müzik çalabiliyorum. Seni şaşırtacak bir sürü harika özelliğim var!\n\n🔴 Telegram gruplarının sesli sohbetlerinde müzik çalmamı ister misin? \nBeni nasıl kullanabileceğinizi öğrenmek için lütfen aşağıdaki \ '📜 Kullanım Kılavuzu 📜 \' düğmesini tıklayın. \ N \ n🔴 Grubunuzun sesli sohbetinde müzik çalabilmek için Asistanın grubunuzda olması gerekir. \ N \ n🔴 Diğer [Kullanıcı Kılavuzunda](https://telegra.ph/Serenity-Music-Bot-05-05) belirtilen bilgi ve komutlar\n\n@ExercitusBots'un bir projesi""",
         reply_markup=InlineKeyboardMarkup(
             [ 
                 [
                     InlineKeyboardButton(
-                        "📜 User Manual 📜", url="https://telegra.ph/Serenity-Music-Bot-05-05")
+                        "📜 Kullanım Kılavuzu 📜", url="https://telegra.ph/Exercitus-Music-Bot-05-30")
                   ],[
                     InlineKeyboardButton(
-                        "👨‍💻 Updates 👨‍💻", url="https://t.me/SerenityBots"
+                        "👨‍💻 Güncellemeler 👨‍💻", url="https://t.me/ExercitusBots"
                     )
                 ],[ 
                     InlineKeyboardButton(
-                        "Support Chat 🎙️", url="https://t.me/SerenitySupport"
+                        "Destek Grubu 🎙️", url="https://t.me/ExercitusSupport"
                     )]
             ]
         ),
@@ -30,12 +30,12 @@ async def start(_, message: Message):
 
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
-      await message.reply_text("""**🔴 Music player is online**""",
+      await message.reply_text("""**🔴 Müzik Oynatıcı Aktif**""",
       reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🎙️ Support Group 🎙️", url="https://t.me/SerenitySupport")
+                        "🎙️ Destek Grubu 🎙️", url="https://t.me/ExercitusSupport")
                 ]
             ]
         )
