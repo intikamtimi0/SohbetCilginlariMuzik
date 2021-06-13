@@ -1,4 +1,4 @@
-<h1 align="centre">🎶 Serenity Music Bot 🎶</h1>
+<h1 align="centre">🎶 Exercitus Music Bot 🎶</h1>
 
 Support Group = [@ExercitusSupport](https://t.me/ExercitusSupport)
 
