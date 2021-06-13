@@ -13,21 +13,19 @@ async def start(_, message: Message):
         Seni şaşırtacak bir sürü harika özelliğim var!
         Telegram gruplarının sesli sohbetlerinde müzik çalmamı ister misin?
         Beni nasıl kullanabileceğinizi öğrenmek için lütfen aşağıdaki \ '📜 Kullanım Kılavuzu 📜 \' düğmesini tıklayın.
-        Grubunuzun sesli sohbetinde müzik çalabilmek için Asistanın grubunuzda olması gerekir.
-        Diğer Kullanıcı Kılavuzunda belirtilen bilgi ve komutlar
-        @ExercitusBots'un bir projesi""",
+        Grubunuzun sesli sohbetinde müzik çalabilmek için Asistanın grubunuzda olması gerekir.""",
         reply_markup=InlineKeyboardMarkup(
             [ 
                 [
                     InlineKeyboardButton(
-                        "📜 Kullanım Kılavuzu 📜", url="https://telegra.ph/Exercitus-Music-Bot-05-30")
+                        "📜 Kullanım Kılavuzu 📜", url="https://telegra.ph/Sohbet-Muzik-Bot-06-13")
                   ],[
                     InlineKeyboardButton(
-                        "👨‍💻 Güncellemeler 👨‍💻", url="https://t.me/ExercitusBots"
+                        "👨‍💻 Güncellemeler 👨‍💻", url="https://t.me/SohbetCilginlariBotlar"
                     )
                 ],[ 
                     InlineKeyboardButton(
-                        "Destek Grubu 🎙️", url="https://t.me/ExercitusSupport"
+                        "Destek Grubu 🎙️", url="https://t.me/SohbetMuzikDestek"
                     )]
             ]
         ),
@@ -41,7 +39,7 @@ async def gstart(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🎙️ Destek Grubu 🎙️", url="https://t.me/ExercitusSupport")
+                        "🎙️ Destek Grubu 🎙️", url="https://t.me/SohbetMuzikDestek")
                 ]
             ]
         )
