@@ -4,5 +4,9 @@
 __pycache__
 .idea
 .vscode
-raw_files
-downloads
+*.log
+venv/
+.idea/
+raw_files/
+downloads/
+__pycache__/
