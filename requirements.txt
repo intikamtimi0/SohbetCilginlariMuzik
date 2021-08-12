@@ -17,3 +17,5 @@ python-arq
 future
 psutil
 wget
+pytgcalls
+TgCrypto
