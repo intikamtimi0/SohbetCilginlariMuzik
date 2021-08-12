@@ -1,8 +1,13 @@
 LICENSE
 README.md
-
 .env
 .gitignore
-
 .git/
 __pycache__/
+*.log
+.idea/
+str.py
+Procfile
+downloads/
+raw_files/
+
